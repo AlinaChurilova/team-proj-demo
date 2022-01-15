@@ -1,0 +1,141 @@
+.products {
+  background-color: #e5e5e5;
+  padding: 127px 0 119px 0;
+}
+.products__label {
+  display: block;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 1.13;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $titlePinkColor;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.products__title {
+  display: block;
+  text-align: center;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $accentColor;
+  margin-bottom: 259px;
+}
+.products__list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.products__item {
+  position: relative;
+  border-radius: 24px;
+  margin-right: 23px;
+  padding: 163px 44px 0 44px;
+  &:last-child {
+    margin-right: 0px;
+  }
+  height: 525px;
+  width: 329px;
+  &::after {
+    content: '';
+    top: 100%;
+    right: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: #2196f3;
+  }
+}
+.products__item__first {
+  background-color: $lightPinkColor;
+  @media screen and (min-width: 1200px) {
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: -215px;
+      display: block;
+      width: 335px;
+      height: 335px;
+      background-image: url(/images/desctop/desctop-ice-products1x-min.png);
+
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(/images/desctop/desctop-ice-products2x-min.png);
+      }
+
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 335px;
+      height: 335px;
+    }
+  }
+}
+.products__item__second {
+  background-color: $yellowColor;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -215px;
+    display: block;
+    width: 335px;
+    height: 335px;
+    background-image: url(/images/desctop/desctop-caffe-products1x-min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 335px;
+    height: 335px;
+  }
+}
+.products__item__third {
+  background-color: $greenColor;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -215px;
+    display: block;
+    width: 335px;
+    height: 335px;
+    background-image: url(/images/desctop/desctop-shake-products1x-min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 335px;
+    height: 335px;
+  }
+}
+.products__list-item {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 1.13;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $whiteTextColor;
+}
+.products__description {
+  font-family: 'DM Sans Bold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.75;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $whiteTextColor;
+}
